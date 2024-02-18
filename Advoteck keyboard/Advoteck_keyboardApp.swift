@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct Advoteck_keyboardApp: App {
     var body: some Scene {

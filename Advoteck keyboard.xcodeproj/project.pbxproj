@@ -18,6 +18,7 @@
 		D06852D52B8180570054DA80 /* keyboard extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D06852CE2B8180570054DA80 /* keyboard extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D06852DC2B8181150054DA80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D06852DB2B8181150054DA80 /* FirebaseAuth */; };
 		D06852DE2B8181150054DA80 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D06852DD2B8181150054DA80 /* FirebaseStorage */; };
+		D06852E02B818DEA0054DA80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D06852DF2B818DEA0054DA80 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		D06852CE2B8180570054DA80 /* keyboard extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "keyboard extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06852D02B8180570054DA80 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		D06852D22B8180570054DA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06852DF2B818DEA0054DA80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				D06852A02B817FE60054DA80 /* Advoteck_keyboardApp.swift */,
 				D06852A22B817FE60054DA80 /* ContentView.swift */,
+				D06852DF2B818DEA0054DA80 /* GoogleService-Info.plist */,
 				D06852A42B817FE70054DA80 /* Assets.xcassets */,
 				D06852A62B817FE70054DA80 /* Preview Content */,
 			);
@@ -311,6 +314,7 @@
 			files = (
 				D06852A82B817FE70054DA80 /* Preview Assets.xcassets in Resources */,
 				D06852A52B817FE70054DA80 /* Assets.xcassets in Resources */,
+				D06852E02B818DEA0054DA80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
