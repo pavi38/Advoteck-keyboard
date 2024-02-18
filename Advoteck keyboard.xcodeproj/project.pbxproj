@@ -14,6 +14,10 @@
 		D06852B22B817FE70054DA80 /* Advoteck_keyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06852B12B817FE70054DA80 /* Advoteck_keyboardTests.swift */; };
 		D06852BC2B817FE70054DA80 /* Advoteck_keyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06852BB2B817FE70054DA80 /* Advoteck_keyboardUITests.swift */; };
 		D06852BE2B817FE70054DA80 /* Advoteck_keyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06852BD2B817FE70054DA80 /* Advoteck_keyboardUITestsLaunchTests.swift */; };
+		D06852D12B8180570054DA80 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06852D02B8180570054DA80 /* KeyboardViewController.swift */; };
+		D06852D52B8180570054DA80 /* keyboard extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D06852CE2B8180570054DA80 /* keyboard extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D06852DC2B8181150054DA80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D06852DB2B8181150054DA80 /* FirebaseAuth */; };
+		D06852DE2B8181150054DA80 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D06852DD2B8181150054DA80 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,28 @@
 			remoteGlobalIDString = D068529C2B817FE60054DA80;
 			remoteInfo = "Advoteck keyboard";
 		};
+		D06852D32B8180570054DA80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06852952B817FE60054DA80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06852CD2B8180570054DA80;
+			remoteInfo = "keyboard extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D06852D92B8180570054DA80 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D06852D52B8180570054DA80 /* keyboard extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D068529D2B817FE60054DA80 /* Advoteck keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advoteck keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +69,9 @@
 		D06852B72B817FE70054DA80 /* Advoteck keyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advoteck keyboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06852BB2B817FE70054DA80 /* Advoteck_keyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advoteck_keyboardUITests.swift; sourceTree = "<group>"; };
 		D06852BD2B817FE70054DA80 /* Advoteck_keyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advoteck_keyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D06852CE2B8180570054DA80 /* keyboard extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "keyboard extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06852D02B8180570054DA80 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D06852D22B8180570054DA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06852DC2B8181150054DA80 /* FirebaseAuth in Frameworks */,
+				D06852DE2B8181150054DA80 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D06852CB2B8180570054DA80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +114,7 @@
 				D068529F2B817FE60054DA80 /* Advoteck keyboard */,
 				D06852B02B817FE70054DA80 /* Advoteck keyboardTests */,
 				D06852BA2B817FE70054DA80 /* Advoteck keyboardUITests */,
+				D06852CF2B8180570054DA80 /* keyboard extension */,
 				D068529E2B817FE60054DA80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +125,7 @@
 				D068529D2B817FE60054DA80 /* Advoteck keyboard.app */,
 				D06852AD2B817FE70054DA80 /* Advoteck keyboardTests.xctest */,
 				D06852B72B817FE70054DA80 /* Advoteck keyboardUITests.xctest */,
+				D06852CE2B8180570054DA80 /* keyboard extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +166,15 @@
 			path = "Advoteck keyboardUITests";
 			sourceTree = "<group>";
 		};
+		D06852CF2B8180570054DA80 /* keyboard extension */ = {
+			isa = PBXGroup;
+			children = (
+				D06852D02B8180570054DA80 /* KeyboardViewController.swift */,
+				D06852D22B8180570054DA80 /* Info.plist */,
+			);
+			path = "keyboard extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +185,18 @@
 				D06852992B817FE60054DA80 /* Sources */,
 				D068529A2B817FE60054DA80 /* Frameworks */,
 				D068529B2B817FE60054DA80 /* Resources */,
+				D06852D92B8180570054DA80 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D06852D42B8180570054DA80 /* PBXTargetDependency */,
 			);
 			name = "Advoteck keyboard";
+			packageProductDependencies = (
+				D06852DB2B8181150054DA80 /* FirebaseAuth */,
+				D06852DD2B8181150054DA80 /* FirebaseStorage */,
+			);
 			productName = "Advoteck keyboard";
 			productReference = D068529D2B817FE60054DA80 /* Advoteck keyboard.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +237,23 @@
 			productReference = D06852B72B817FE70054DA80 /* Advoteck keyboardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D06852CD2B8180570054DA80 /* keyboard extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06852D62B8180570054DA80 /* Build configuration list for PBXNativeTarget "keyboard extension" */;
+			buildPhases = (
+				D06852CA2B8180570054DA80 /* Sources */,
+				D06852CB2B8180570054DA80 /* Frameworks */,
+				D06852CC2B8180570054DA80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "keyboard extension";
+			productName = "keyboard extension";
+			productReference = D06852CE2B8180570054DA80 /* keyboard extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +275,9 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = D068529C2B817FE60054DA80;
 					};
+					D06852CD2B8180570054DA80 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = D06852982B817FE60054DA80 /* Build configuration list for PBXProject "Advoteck keyboard" */;
@@ -215,6 +289,9 @@
 				Base,
 			);
 			mainGroup = D06852942B817FE60054DA80;
+			packageReferences = (
+				D06852DA2B8181150054DA80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D068529E2B817FE60054DA80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +299,7 @@
 				D068529C2B817FE60054DA80 /* Advoteck keyboard */,
 				D06852AC2B817FE70054DA80 /* Advoteck keyboardTests */,
 				D06852B62B817FE70054DA80 /* Advoteck keyboardUITests */,
+				D06852CD2B8180570054DA80 /* keyboard extension */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +322,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D06852B52B817FE70054DA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06852CC2B8180570054DA80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +364,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D06852CA2B8180570054DA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06852D12B8180570054DA80 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +384,11 @@
 			isa = PBXTargetDependency;
 			target = D068529C2B817FE60054DA80 /* Advoteck keyboard */;
 			targetProxy = D06852B82B817FE70054DA80 /* PBXContainerItemProxy */;
+		};
+		D06852D42B8180570054DA80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06852CD2B8180570054DA80 /* keyboard extension */;
+			targetProxy = D06852D32B8180570054DA80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +515,7 @@
 		D06852C22B817FE70054DA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +544,7 @@
 		D06852C32B817FE70054DA80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +642,54 @@
 			};
 			name = Release;
 		};
+		D06852D72B8180570054DA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "keyboard extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "keyboard extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "advoteck.Advoteck-keyboard.keyboard-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D06852D82B8180570054DA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "keyboard extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "keyboard extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "advoteck.Advoteck-keyboard.keyboard-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,7 +729,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D06852D62B8180570054DA80 /* Build configuration list for PBXNativeTarget "keyboard extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06852D72B8180570054DA80 /* Debug */,
+				D06852D82B8180570054DA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D06852DA2B8181150054DA80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D06852DB2B8181150054DA80 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D06852DA2B8181150054DA80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D06852DD2B8181150054DA80 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D06852DA2B8181150054DA80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D06852952B817FE60054DA80 /* Project object */;
 }
