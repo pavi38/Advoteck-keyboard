@@ -20,11 +20,23 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //loading the view xib file
+        let nib = UINib(nibName: "KeyboardView", bundle: nil)
+        let objects = nib.instantiate(withOwner: self, options: nil)
+        view = objects[0] as? UIView
+        
+        //keyboard height constraints
+        let constr = NSLayoutConstraint.init(item: self.view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: 280)
+        constr.priority = .defaultHigh
+        view.addConstraint(constr)
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
         
         self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
         self.nextKeyboardButton.sizeToFit()
+        self.nextKeyboardButton.backgroundColor = UIColor.white
+        self.nextKeyboardButton.layer.cornerRadius = 3
+        self.nextKeyboardButton.layer.masksToBounds = true
         self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
         
         self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
@@ -35,11 +47,15 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
-    override func viewWillLayoutSubviews() {
-        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
-        super.viewWillLayoutSubviews()
-    }
+    //Action when the keys are pressed
     
+    @IBAction func buttonPressed(button :UIButton){
+        var input = button.titleLabel?.text
+        (textDocumentProxy as UIKeyInput).insertText("\(input!)")
+        print(input!)
+        
+        
+    }
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
@@ -52,7 +68,7 @@ class KeyboardViewController: UIInputViewController {
         if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
             textColor = UIColor.white
         } else {
-            textColor = UIColor.black
+            textColor = UIColor.blue
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
